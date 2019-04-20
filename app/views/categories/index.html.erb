@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header">
+    <h3>Create a Category</h3>
+  <div>
+  <div class="form">
+    <%= render 'form' %>
+  </div>
+
+  <div class="category-list">
+    <h3>List of Categories</h3>
+    <% @categories.each do |category| %>
+    <ul>
+      <li><%= category.name %></li>
+    </ul>
+    <% end %>
+  </div>
+</div>
