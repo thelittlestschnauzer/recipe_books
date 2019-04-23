@@ -1,3 +1,76 @@
-// Place all the styles related to the Recipes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// .h13 {
+//   letter-spacing: 1px;
+//   line-height: 1.6;
+//   text-transform: uppercase;
+//   color: #484848;
+//   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+// }
+
+.bd4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 80px;
+}
+
+.card-deck {
+  margin: 0px 10px 0px 10px;
+}
+
+.card {
+  min-height: 418px;
+  max-height: 418px;
+  background-color: #f2f3ef;
+}
+
+.card-body {
+  // height: 100px;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.card-title {
+  padding-left: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  margin-top: 5px;
+  color: #484848;
+  &:hover {
+    color: #718878;
+    text-decoration: none;
+  }
+  a {
+    color: #484848;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    &:hover {
+      text-decoration: none;
+      color: #718878;
+    }
+  }
+}
+
+.card-text.StaticTiles__meta-l {
+  bottom: 8px;
+  margin: 0;
+  margin-left: 8px;
+  color: rgba(72, 72, 72, .5);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+  position: absolute;
+}
+
+.card-text.StaticTiles__meta-r {
+  position: absolute;
+  bottom: 8px;
+  margin: 0;
+  color: rgba(72, 72, 72, .5);
+  right: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #484848;
+  border: 1px solid #484848;
+}
