@@ -1,41 +1,29 @@
-
-
-
-<div class="row">
-  <div class="col-sm-6">
-    <h1>Recipes</h1>
-  </div>
-
-  <div class="col-sm-6 text-right">
-  <%= link_to new_recipe_path, class: 'btn btn-primary' do %>
+<%= link_to new_category_recipe_path(:category_id), class: 'btn' do %>
     Add New Recipe
-  <% end %>
+<% end %>
+
+  <div class="large-12 column">
+    <h3 class="h13 text-center"><%= @category.name %></h3>
+    <p class="text-center bd4">Recipes that will wet your whistle</p>
   </div>
+
+  <div class="card-deck">
+
+    <% @category.recipes.each do |recipe| %>
+    <div class="card" style="width: 300px">
+        <%= image_tag recipe.image, class: "card-img-top" %>
+        <div class="card-body">
+            <h4 class="card-title"><%= link_to recipe.title, category_recipe_path(@category, recipe.id) %></h4>
+            <p class="card-text StaticTiles__meta-l"><%= recipe.servings %></p>
+            <p class="card-text StaticTiles__meta-r"><%= recipe.level %></p>
+        </div>
+      </div>
+  <% end %>
+
 </div>
 
-<div class="table-responsive">
-  <table class="table table-striped table-bordered table-hover">
-    <thead>
-      <tr>
     
 
-            
-          <th></th>
-        
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @recipes.each do |recipe| %>
-        <%= content_tag :tr, id: dom_id(recipe), class: dom_class(recipe) do %>
-          
-
-          
-          
-            <td><%= link_to 'Show', recipe %></td>
-          
-        <% end %>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+  
+  
+    

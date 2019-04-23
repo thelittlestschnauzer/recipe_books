@@ -1,7 +1,10 @@
 1. Need to set up category form for admin only
 
-2. Create how the recipes will be displayed 
-  /categories/category_id/recipes
   
-3. Create a recipe, edit a recipe and delete a recipe
+
+3. Need to be able to add Ingredients and Directions to the Recipe. 
+  I will need a model for Ingredients and a model for Directions (need DB)
+    URL: /categories/:category_id/recipes/:id  
+          use attributes for ingredients and directions
+          
 
